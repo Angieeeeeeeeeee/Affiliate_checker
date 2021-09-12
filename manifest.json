@@ -1,0 +1,16 @@
+{
+  "name": "affiliate checker",
+  "description": "Raise a warning when you click on an affiliate URL ",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "icons/affiliate_checker_16.png",
+    "48": "icons/affiliate_checker_48.png",
+    "128":"icons/affiliate_checker_128.png"
+  },
+  "content_scripts": [{
+    "matches": ["https://www.amazon.co.jp/*"],
+    "include_globs": ["*-22*"],
+    "js": ["js/content.js"]
+    }]
+}
